@@ -3,4 +3,4 @@
 
 ## fork from [DomYY/SpechtLite.Config](https://github.com/DomYY/SpechtLite.Config)
 
-## 各规则根据本人喜好进行定制。
+## 各规则根据本人喜好进行调整。
