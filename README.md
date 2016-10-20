@@ -10,6 +10,7 @@
 
 应用场景：同处与一个局域网下的其他设备，不需要安装软件，通过您的 `SpechtLite` 进行科学上网。
 使用方法：
+
 1. 在 `SpechtLite` 勾选 <kbd>Allow Clients From Lan</kbd>；
 2. 需要科学上网的同一局域网下设备，设置 `HTTP 代理`：
   - `iPhone` 点击所链接网络详情，在下面的 `HTTP 代理` 选择手动。
