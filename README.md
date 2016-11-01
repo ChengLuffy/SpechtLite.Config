@@ -10,7 +10,7 @@
   file: ~/.SpechtLite/one
   adapter: adapter1
 ```
-同时在 `~/.SpechtLite/` 下创建名为  `one` 的文件，在其中加入需要进行代理处理，却需要稳定节点 **IP** 的。
+同时在 `~/.SpechtLite/` 下创建名为  `one` 的文件，在其中加入需要进行代理处理，却需要稳定节点 **IP** 的网络请求 **URL**。
 
 ---
 这里在谈下 `SpechtLite` 的一个实用功能： <kbd>Allow Clients From Lan</kbd>
