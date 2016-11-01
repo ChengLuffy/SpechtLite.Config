@@ -48,6 +48,10 @@ rule:
     file: ~/.SpechtLite/directiprange
     adapter: direct
   - type: list
+  # 某些链接不适合多节点 speed 规则，而且必须 科学上网，稳定节点链接相应请求 例如 mail.app 中的 outlook 链接，不可直连，IP 多变会触发异常报告。
+    file: ~/.SpechtLite/one
+    adapter: adapter1
+  - type: list
   # Forward requests based on whether the host domain matches the given regular expressions.
     file: ~/.SpechtLite/proxylist
     adapter: proxy
