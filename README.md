@@ -4,8 +4,15 @@
 ## fork from [DomYY/SpechtLite.Config](https://github.com/DomYY/SpechtLite.Config)
 
 ## 各规则根据本人喜好进行调整。
+注：由于 `mail.app` 🔗 `outlook` 邮箱的请求的 **URL** 直连很不稳定，有时直接断流，而使用 **speed** 规则会导致登陆 **IP** 多变，触发异常报告，所以我在 `yaml` 文件 `proxy` 规则之前 添加：
+```
+- type: list
+  file: ~/.SpechtLite/one
+  adapter: adapter1
+```
+同时在 `~/.SpechtLite/` 下创建名为  `one` 的文件，在其中加入需要进行代理处理，却需要稳定节点 **IP** 的。
 
-
+---
 这里在谈下 `SpechtLite` 的一个实用功能： <kbd>Allow Clients From Lan</kbd>
 
 应用场景：同处与一个局域网下的其他设备，不需要安装软件，通过您的 `SpechtLite` 进行科学上网。
