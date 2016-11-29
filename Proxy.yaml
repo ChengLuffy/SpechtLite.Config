@@ -6,6 +6,22 @@ adapter:
      # id is used to distinguish adapter when defining rules.
      # There is a 'direct' adapter that connect directly to target host without proxy.
   - id: adapter1
+     # HTTP server is a http proxy server.
+    type: HTTP
+    host: http.proxy
+    port: 3128
+    auth: true
+    username: proxy_username
+    password: proxy_password
+  - id: adapter2
+     # SHTTP server is a http proxy server on SSL.
+    type: SHTTP
+    host: http.proxy.connect.via.https
+    port: 3128
+    auth: true
+    username: proxy_username
+    password: proxy_password
+  - id: ss_proxy
     type: ss
     host: your host
     port: 443
@@ -13,6 +29,11 @@ adapter:
     # Shadowsocks encryption methods are not fully tested, please report if there is anything not working.
     method: AES-256-CFB
     password: your password
+    ota: false
+  - id: adapter4
+    type: socks5
+    host: socks5.server
+    port: 3128
   # Speed adapter automatically connects to all specified adapters (with given delay)
   # and uses the fastest one that becomes ready.
   - id: proxy
@@ -50,7 +71,7 @@ rule:
   - type: list
   # 某些链接不适合多节点 speed 规则，而且必须 科学上网，稳定节点链接相应请求 例如 mail.app 中的 outlook 链接，不可直连，IP 多变会触发异常报告。
     file: ~/.SpechtLite/one
-    adapter: adapter1
+    adapter: ss_proxy
   - type: list
   # Forward requests based on whether the host domain matches the given regular expressions.
     file: ~/.SpechtLite/proxylist
