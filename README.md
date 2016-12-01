@@ -23,3 +23,9 @@
   - `windows` 在 `Internet 选项` 选择 `局域网设置`，勾选 `代理服务器`。
   - `Andriod` 没研究过。。。
 3. 地址／服务器 写 `SpechtLite` 所在的 `Mac` 的 **局域网地址**，端口 写 `yaml` 配置文件第一行 `port:` 后所跟的参数，默认是 `9090`。
+
+
+---
+
+
+关于如何配置 `SpechtLite` 请参考：[SpechtLite简单使用说明](http://chengluffy.tech/2016/11/29/SpechtLite简单使用说明/)
