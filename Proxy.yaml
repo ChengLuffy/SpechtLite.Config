@@ -40,14 +40,7 @@ adapter:
     type: SPEED
     adapters:
       - id: adapter1
-        delay: 0
-  - id: speed
-    type: SPEED
-    adapters:
-      - id: proxy
         delay: 300
-      - id: direct
-        delay: 0
   # Disconnect after given delay without connecting to remote.
   - id: reject
     type: reject
