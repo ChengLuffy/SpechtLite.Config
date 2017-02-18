@@ -5,6 +5,13 @@ port: 9090
 adapter:
      # id is used to distinguish adapter when defining rules.
      # There is a 'direct' adapter that connect directly to target host without proxy.
+  - id: one
+    type: SHTTP
+    host: http.proxy.connect.via.https
+    port: 3128
+    auth: true
+    username: proxy_username
+    password: proxy_password
   - id: adapter1
      # HTTP server is a http proxy server.
     type: HTTP
@@ -52,6 +59,10 @@ adapter:
 # Here defines how things should work.
 # Rule will be matched one by one.
 rule:
+  - type: iplist
+  # Forward polluted host IP address
+    file: ~/.SpechtLite/one
+    adapter: one
   - type: iplist
   # Forward polluted host IP address
     file: ~/.SpechtLite/pollutedip
