@@ -1,6 +1,6 @@
 # Rule template for [SpechtLite](https://github.com/zhuhaow/SpechtLite)
 
-# fork from [DomYY/SpechtLite.Config](https://github.com/DomYY/SpechtLite.Config)
+## fork from [DomYY/SpechtLite.Config](https://github.com/DomYY/SpechtLite.Config)
 
 ## 各规则根据本人喜好进行调整。
 注：由于 `mail.app` 🔗 `outlook` 邮箱的请求的 **URL** 直连很不稳定，有时直接断流，而使用 **speed** 规则会导致登陆 **IP** 多变，触发异常报告，所以我在 `yaml` 文件 `proxy` 规则之前 添加：
